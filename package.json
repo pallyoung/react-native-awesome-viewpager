@@ -1,0 +1,33 @@
+{
+  "name": "react-native-awesome-viewpager",
+  "version": "1.0.0",
+  "description": "awesome react native swiper",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies":{
+    "react-native":">=0.48",
+    "react":">=16.0.0",
+    "prop-types":">=15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallyoung/react-native-awesome-viewpager.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "swpier",
+    "viewpager"
+  ],
+  "author": "Spencer Ye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallyoung/react-native-awesome-viewpager/issues"
+  },
+  "homepage": "https://github.com/pallyoung/react-native-awesome-viewpager#readme"
+}
