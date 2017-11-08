@@ -18,7 +18,8 @@ class Swiper extends Component {
         ...ViewPager.propTypes,
         loop: PropTypes.bool,
         autoplay: PropTypes.bool,
-        interval: PropTypes.number
+        interval: PropTypes.number,
+        indicator:PropTypes.bool
     };
 
     static defaultProps = {
