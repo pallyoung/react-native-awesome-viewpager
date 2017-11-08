@@ -73,6 +73,8 @@ TitleBar's background color,dafault is white.
 titles
 #### renderTitle:(title,index,selectedIndex)=>ReactElement
 render title item
+#### borderStyle: View.propTypes.style
+border indicator style
 
 
 ### TabBar
