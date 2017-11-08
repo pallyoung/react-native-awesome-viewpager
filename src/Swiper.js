@@ -28,7 +28,8 @@ class Swiper extends Component {
         loop: false,
         autoplay: false,
         keyboardDismissMode: 'on-drag',
-        scrollEnabled: true
+        scrollEnabled: true,
+        indicator:true
     };
     constructor(...props) {
         super(...props);
@@ -165,9 +166,10 @@ class Swiper extends Component {
             onLayout={this.props.onLayout} >
             <ViewPager
                 {...viewpagerProps} />
-            <Indicator
+            {this.props.indicator&&<Indicator
                 ref = {INDICATOR_REF}
-                count={childrenCount} />
+                initialPage = {this.props.initialPage}
+                count={childrenCount} />}
         </View>
 
 

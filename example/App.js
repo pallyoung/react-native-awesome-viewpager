@@ -23,7 +23,7 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   state = {
     scrollEnabled: true,
-    type: 2,
+    type: 1,
   }
 
   render() {

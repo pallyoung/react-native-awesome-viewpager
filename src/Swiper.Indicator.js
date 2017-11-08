@@ -22,18 +22,40 @@ class Indicator extends Component {
     onPageScroll(event) {
         var { offset, position } = event.nativeEvent;
         this._scrollValue.setValue(position + offset);
+        console.log(position + offset,'position + offset')
     }
     _renderIndicator() {
         return new Array(this.props.count).fill(1).map((a,i) => {
             let count = this.props.count;
-            var opacity = this._scrollValue.interpolate({
-                inputRange:[-Infinity,i-1,i,i+1,Infinity],
-                outputRange:[0.5,0.5,1,0.5,0.5]
-            });
-            var scale = this._scrollValue.interpolate({
-                inputRange:[-Infinity,i-1,i,i+1,Infinity],
-                outputRange:[1,1,1.2,1,1]
-            });
+            var opacity,scale;
+            if(i===0){
+                opacity = this._scrollValue.interpolate({
+                    inputRange:[0,1,count-1,count],
+                    outputRange:[1,0.5,0.5,1]
+                });
+                scale = this._scrollValue.interpolate({
+                    inputRange:[0,1,count-1,count],
+                    outputRange:[1.2,1,1,1.2]
+                });
+            }else if(i===count-1){
+                opacity = this._scrollValue.interpolate({
+                    inputRange:[-Infinity,i-1,i,i+1,Infinity],
+                    outputRange:[0.5,0.5,1,0.5,0.5]
+                });
+                scale = this._scrollValue.interpolate({
+                    inputRange:[-Infinity,i-1,i,i+1,Infinity],
+                    outputRange:[1,1,1.2,1,1]
+                });
+            }else{
+                opacity = this._scrollValue.interpolate({
+                    inputRange:[-Infinity,i-1,i,i+1,Infinity],
+                    outputRange:[0.5,0.5,1,0.5,0.5]
+                });
+                scale = this._scrollValue.interpolate({
+                    inputRange:[-Infinity,i-1,i,i+1,Infinity],
+                    outputRange:[1,1,1.2,1,1]
+                });
+            }
             var style = {
                 backgroundColor: '#fff',
                 height: 8,
