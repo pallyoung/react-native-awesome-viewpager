@@ -2,8 +2,15 @@
 import React, { Component } from 'react';
 import { View, Text, Animated, TouchableWithoutFeedback,TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-function renderTitle(title, index, page) {
-
+function renderTitle(title, i, selected) {
+    var textStyle = {
+        color:'#aaaaaa',
+        fontSize:16
+      };
+      if (selected === i) {
+          textStyle.color = '#333333'
+      }
+      return <Text style={textStyle}>{title}</Text>
 }
 class Title extends Component {
     static propTypes = {
@@ -15,6 +22,7 @@ class Title extends Component {
     static defaultProps = {
         backgroundColor: '#fff',
         borderStyle: { height: 3, backgroundColor: '#2ca1aa' },
+        renderTitle
     }
     constructor(...props) {
         super(...props);

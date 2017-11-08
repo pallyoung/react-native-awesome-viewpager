@@ -23,35 +23,7 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   state = {
     scrollEnabled: true,
-    type: 3,
-  }
-  _renderTab(tab, i, page) {
-    var source = i == page ? tab.selectedIcon : tab.icon;
-    var textStyle = {
-      fontSize: 12,
-      color: '#7a7e83',
-      height: 16,
-      lineHeight: 16,
-      marginTop: 5
-    }
-    if (i == page) {
-      textStyle.color = '#27b24a';
-    }
-    return <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-      <Image source={source} resizeMode='stretch' />
-      {tab.text && <Text
-        style={textStyle}>{tab.text}</Text>}
-    </View>
-  }
-  _rendetTitle(title,i,selected){
-    var textStyle = {
-      color:'#aaaaaa',
-      fontSize:16
-    };
-    if (selected === i) {
-        textStyle.color = '#333333'
-    }
-    return <Text style={textStyle}>{title}</Text>
+    type: 2,
   }
 
   render() {
@@ -93,7 +65,6 @@ export default class App extends Component<{}> {
       case 2:
         return <TitleBar
           style={styles.container}
-          renderTitle = {(title,i,selected)=>this._rendetTitle(title,i,selected)}
           titles={['Page 1', 'Page 2', 'Page 3']}>
           <View>
             <Text>Page 1</Text>
@@ -108,7 +79,6 @@ export default class App extends Component<{}> {
       case 3:
         return <TabBar
           style={styles.container}
-          renderTab={(tab, i, selected) => this._renderTab(tab, i, selected)}
           tabs={[{
             text: 'Page 1',
             icon: require('./icon/Bubble.png'),
