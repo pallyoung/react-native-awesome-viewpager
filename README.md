@@ -38,7 +38,7 @@ then you can use all these
 
 * [ViewPager](#viewpager)
 * [Swiper](#swiper)
-* [TitleBar] (#titlebar)
+* [TitleBar](#titlebar)
 * [TabBar](#tabbar)
 
 *Note:Swpier TitleBar and TabBar implements all methods and props of ViewPager,and has the props below.*
