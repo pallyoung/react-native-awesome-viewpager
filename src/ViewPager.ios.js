@@ -102,7 +102,7 @@ class ViewPager extends Component {
                 (child.type.displayName !== 'View')) {
                 console.warn('Each ViewPager child must be a <View>. Was ' + child.type.displayName);
             }
-            return React.createElement(child.type, newProps);
+            return React.cloneElement(child.type, newProps);
         });
     };
     /**
