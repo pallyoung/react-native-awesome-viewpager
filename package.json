@@ -6,10 +6,10 @@
   "directories": {
     "example": "example"
   },
-  "devDependencies":{
-    "react-native":">=0.48",
-    "react":">=16.0.0",
-    "prop-types":">=15"
+  "devDependencies": {
+    "prop-types": ">=15",
+    "react": ">=16.0.0",
+    "react-native": ">=0.48"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/pallyoung/react-native-awesome-viewpager/issues"
   },
-  "homepage": "https://github.com/pallyoung/react-native-awesome-viewpager#readme"
+  "homepage": "https://github.com/pallyoung/react-native-awesome-viewpager#readme",
+  "dependencies": {
+    "react-native-awesome-viewpager": "^1.0.1"
+  }
 }
