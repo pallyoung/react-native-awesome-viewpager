@@ -137,7 +137,8 @@ class ViewPager extends Component {
             this.props.style,
             {
                 alignItems: undefined,
-                justifyContent: undefined
+                justifyContent: undefined,
+                flexDirection:'row'
             }
         ]
         var props = {
