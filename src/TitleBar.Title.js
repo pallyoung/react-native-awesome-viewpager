@@ -15,7 +15,7 @@ function renderTitle(title, i, selected) {
 class Title extends Component {
     static propTypes = {
         backgroundColor: PropTypes.string,
-        borderStyle: View.propTypes.style,
+        borderStyle:PropTypes.any,
         rendetTitle:PropTypes.func,
         onItemPress: PropTypes.func
     }
