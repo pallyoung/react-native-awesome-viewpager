@@ -68,7 +68,9 @@ class Title extends Component {
                 left,
                 flex: null
             }
-            return <Animated.View style={[this.props.borderStyle, style]} />
+            return <Animated.View 
+                        children={<View style={this.props.borderStyle}/>
+                        style={[style]} />
         }
 
     }
