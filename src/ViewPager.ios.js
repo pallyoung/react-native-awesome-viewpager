@@ -133,7 +133,7 @@ class ViewPager extends Component {
         let childrenCount = React.Children.count(this.props.children);
         let initialPage = Math.min(Math.max(0, this.props.initialPage), childrenCount - 1);
         var { width } = this.state;
-        var style = [
+        let style = [
             this.props.style,
             {
                 alignItems: undefined,
@@ -141,7 +141,10 @@ class ViewPager extends Component {
                 flexDirection:'row'
             }
         ]
-        var props = {
+        if(this._pageSelected){
+            initialPage = this._pageSelected;
+        }
+        let props = {
             showsHorizontalScrollIndicator: false,
             showsVerticalScrollIndicator: false,
             bounces: false,
