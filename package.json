@@ -31,6 +31,5 @@
   },
   "homepage": "https://github.com/pallyoung/react-native-awesome-viewpager#readme",
   "dependencies": {
-    "react-native-viewpager": "^1.0.1"
   }
 }
