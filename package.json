@@ -1,6 +1,6 @@
 {
   "name": "react-native-awesome-viewpager",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "awesome react native swiper",
   "main": "index.js",
   "directories": {
@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/pallyoung/react-native-awesome-viewpager#readme",
   "dependencies": {
-    "react-native-awesome-viewpager": "^1.0.1"
+    "react-native-viewpager": "^1.0.1"
   }
 }

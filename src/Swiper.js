@@ -42,10 +42,6 @@ class Swiper extends Component {
             this._play();
         }
     }
-    componentWillReceiveProps(nextProps) {
-
-    }
-
     componentWillUnmount() {
         this._stop();
     }

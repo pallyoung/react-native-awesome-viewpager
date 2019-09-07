@@ -35,9 +35,6 @@ export default class App extends Component<{}> {
             loop={true}
             autoplay={false}
             interval={2000}
-            onPageScroll={(e) => console.log(e, 'onPageScroll')}
-            onPageScrollStateChanged={(e) => console.log(e, 'onPageScrollStateChanged')}
-            onPageSelected={(e) => console.log(e, 'onPageSelected')}
             scrollEnabled={this.state.scrollEnabled}
             style={styles.container}>
             <View style={{ backgroundColor: 'red', padding: 60 }}>

@@ -22,7 +22,6 @@ class Indicator extends Component {
     onPageScroll(event) {
         var { offset, position } = event.nativeEvent;
         this._scrollValue.setValue(position + offset);
-        console.log(position + offset,'position + offset')
     }
     _renderIndicator() {
         return new Array(this.props.count).fill(1).map((a,i) => {
