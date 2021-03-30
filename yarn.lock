@@ -2788,10 +2788,6 @@ react-devtools-core@3.0.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-awesome-viewpager@^1.0.1:
-  version "1.0.1"
-  resolved "http://registry.npm.taobao.org/react-native-awesome-viewpager/download/react-native-awesome-viewpager-1.0.1.tgz#b9c741bd03debe42656fd976b57d1ff21f421bd6"
-
 react-native@>=0.48:
   version "0.52.1"
   resolved "http://registry.npm.taobao.org/react-native/download/react-native-0.52.1.tgz#68ca222f9c6a9bbe4a6f95896a5f9611c1311c31"
@@ -3671,8 +3667,8 @@ xtend@~4.0.1:
   resolved "http://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "http://registry.npm.taobao.org/y18n/download/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
 
 yallist@^2.1.2:
   version "2.1.2"
